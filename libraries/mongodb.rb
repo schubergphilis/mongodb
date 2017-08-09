@@ -32,7 +32,6 @@ class Chef::ResourceDefinitionList::MongoDB
         Chef::Log.warn('Cannot search for member nodes with chef-solo, defaulting to single node replica set')
       else
         Chef::Log.warn("Cannot configure replicaset '#{name}', no member nodes found")
-        return
       end
     end
 
